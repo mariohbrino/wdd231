@@ -22,7 +22,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
-        gap: 2rem;
+        gap: 1rem;
         padding: 1rem;
         align-content: start;
     }
@@ -31,12 +31,22 @@
         margin-top: 0;
     }
 
+    .nav-hidden {
+        display: block;
+        visibility: visible;
+    }
+
     nav ul {
         display: flex;
         flex-direction: row;
         justify-content: start;
         align-items: center;
         gap: 1rem;
+    }
+
+    .toogle-menu {
+        display: none;
+        visibility: hidden;
     }
 
     .about-me {
