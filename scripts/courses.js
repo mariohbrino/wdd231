@@ -101,7 +101,32 @@ const populateAllCourses = (filter=null, completed=false) => {
     if (course.completed) {
       articleElement.classList.add("completed-course");
     }
-    articleElement.innerHTML = `${course.subject} ${course.number}`;
+
+    articleElement.innerHTML = `
+      <div class="course-header">
+        <h3 class="course-title">${course.subject} ${course.number}</h3>
+        <span class="course-credits">${course.credits} credits</span>
+      </div>
+      <h4 class="course-name">${course.title}</h4>
+      <p class="course-description">${course.description}</p>
+      <div class="course-details">
+        <div class="course-certificate">
+          <strong>Certificate:</strong> ${course.certificate}
+        </div>
+        <div class="course-technologies">
+          <strong>Technologies:</strong> 
+          <span class="tech-tags">
+            ${course.technology.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+          </span>
+        </div>
+      </div>
+      <div class="course-status">
+        <span class="status-badge ${course.completed ? 'completed' : 'in-progress'}">
+          ${course.completed ? '✓ Completed' : '⏳ In Progress'}
+        </span>
+      </div>
+    `;
+    
     listCoursesElement.appendChild(articleElement);
     creditsTotal += course.credits;
   });
@@ -117,21 +142,38 @@ const filterCoursesListen = () => {
   const wddElement = document.querySelector("#wddCourses");
   const completedElement = document.querySelector("#completedCourses");
 
+  const buttons = [allElement, cseElement, wddElement, completedElement];
+
+  const removeActiveClass = () => {
+    buttons.forEach(button => button.classList.remove("active"));
+  };
+
+  const setActiveButton = (activeButton) => {
+    removeActiveClass();
+    activeButton.classList.add("active");
+  };
+
   allElement.addEventListener("click", () => {
+    setActiveButton(allElement);
     populateAllCourses();
   });
 
   completedElement.addEventListener("click", () => {
+    setActiveButton(completedElement);
     populateAllCourses(null, true);
   });
 
   cseElement.addEventListener("click", () => {
+    setActiveButton(cseElement);
     populateAllCourses(filter="CSE");
   });
 
   wddElement.addEventListener("click", () => {
+    setActiveButton(wddElement);
     populateAllCourses(filter="WDD");
   });
+
+  setActiveButton(allElement);
 };
 
 populateAllCourses();
