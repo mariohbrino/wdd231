@@ -14,13 +14,6 @@ body {
     height: 100vh;
     font-family: var(--body-font);
     background: var(--accent2-color);
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
-    grid-template-rows: auto 2fr 1fr auto;
-    grid-template-columns: 1fr;
     color: var(--accent3-color);
     background-image: radial-gradient(circle, #495057 1px, rgba(0,0,0,0) 1px);
     background-size: 1rem 1rem;
@@ -29,7 +22,6 @@ body {
 main {
     margin: 0 auto;
     padding: 2rem;
-    grid-column: 1 / 4;
     background-color: var(--accent2-color);
     max-width: var(--screen-large);
 }
@@ -137,7 +129,6 @@ figure {
 
 #listCourses {
     display: grid;
-    grid: auto-flow / 1fr;
     gap: 1rem;
 }
 
