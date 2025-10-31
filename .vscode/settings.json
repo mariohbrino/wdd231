@@ -9,6 +9,11 @@
     "editor.autoIndent": "full",
     "editor.trimAutoWhitespace": true
   },
+  "[css]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
   "[makefile]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": false,

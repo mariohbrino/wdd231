@@ -99,18 +99,16 @@ const populateAllCourses = (filter=null, completed=false) => {
     const articleElement = document.createElement("article");
     articleElement.classList.add("course");
     if (course.completed) {
-      articleElement.classList.add("completed");
+      articleElement.classList.add("completed-course");
     }
     articleElement.innerHTML = `${course.subject} ${course.number}`;
     listCoursesElement.appendChild(articleElement);
     creditsTotal += course.credits;
   });
 
-  const creditsElement = document.createElement("p");
+  const creditsElement = document.querySelector("#totalCredits");
 
   creditsElement.innerHTML = `The total credits for course listed above is ${creditsTotal}.`;
-
-  listCoursesElement.appendChild(creditsElement);
 };
 
 const filterCoursesListen = () => {
