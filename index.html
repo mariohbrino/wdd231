@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce | WDD231</title>
+    <meta name="description" content="W01 Assignment: Course Home Page">
+    <meta name="author" content="Mario Brino">
+    <meta name="keyword" content="wdd231, html, css, javascript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Chamber</li>
+                <li>Final</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+        </section>
+        <section>
+            <h2>Web Certificate Course</h2>
+            <ul>
+                <li>
+                    <button id="allCourses">All</button>
+                </li>
+                <li>
+                    <button id="cseCourses">CSE</button>
+                </li>
+                <li>
+                    <button id="wddCourses">WDD</button>
+                </li>
+                <li>
+                    <button id="completedCourses">Completed</button>
+                </li>
+            </ul>
+            <div id="listCourses"></div>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+        <p>&copy; <span id="currentYear"></span> - Mario Brino - USA</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
