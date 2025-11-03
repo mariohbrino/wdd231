@@ -61,6 +61,10 @@ nav ul {
     visibility: hidden;
 }
 
+nav .active {
+    color: var(--primary-color);
+}
+
 .logo-header {
     display: flex;
     flex-direction: row;
