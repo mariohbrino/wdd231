@@ -43,7 +43,7 @@ header {
 }
 
 nav {
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
@@ -62,7 +62,17 @@ nav ul {
 }
 
 nav .active {
-    color: var(--primary-color);
+    position: relative;
+}
+
+nav .active::after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 2px;
 }
 
 .logo-header {

@@ -44,6 +44,22 @@
         gap: 1rem;
     }
 
+    nav .active {
+        position: relative;
+    }
+
+    nav .active::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        width: 50%;
+        height: 4px;
+        background-color: var(--primary-color);
+        border-radius: 2px;
+        transform: translateX(-50%);
+    }
+
     .toogle-menu {
         display: none;
         visibility: hidden;
