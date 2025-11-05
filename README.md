@@ -16,3 +16,17 @@ project.
 npm install
 npm run dev
 ```
+
+## Python Environment
+
+```bash
+conda env create -f environment.yml
+conda activate wdd
+mkdir -p $CONDA_PREFIX/etc/conda/activate.d
+echo 'export UV_PROJECT_ENVIRONMENT="$CONDA_PREFIX"' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+```
+
+Intstall the package in editable mode:
+```bash
+uv pip install -e .
+```

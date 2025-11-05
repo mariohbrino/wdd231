@@ -1,0 +1,9 @@
+name: wdd
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - pip
+  - uv
+  - ruff
