@@ -39,3 +39,8 @@ Install the package in editable mode:
 uv pip install -e .
 ```
 > Remove the `-e` flag to install the package in normal mode.
+
+# License Notice
+
+> [!IMPORTANT]
+> The logo on this page is not licensed for reuse. It is used here for educational purposes only.
