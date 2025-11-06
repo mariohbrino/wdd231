@@ -12,6 +12,8 @@ sequence of application courses.
 Install node dependencies and start development environment, this will create an hot reload
 module (HRM) to ensure a fast development with refresh page on when editing files on the
 project.
+
+Install `node dependencies` and start the development server:
 ```bash
 npm install
 npm run dev
@@ -19,14 +21,21 @@ npm run dev
 
 ## Python Environment
 
+This project uses `conda` and `uv` to manage the Python environment. Make sure you have
+`conda` installed before proceeding.
+
+Create and activate the conda environment:
 ```bash
 conda env create -f environment.yml
 conda activate wdd
-mkdir -p $CONDA_PREFIX/etc/conda/activate.d
-echo 'export UV_PROJECT_ENVIRONMENT="$CONDA_PREFIX"' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+make env
 ```
+> This will set the `UV_PROJECT_ENVIRONMENT` variable to the conda environment path. However,
+> you may need to start a new terminal session and activate the environment for the changes
+> to take effect.
 
-Intstall the package in editable mode:
+Install the package in editable mode:
 ```bash
 uv pip install -e .
 ```
+> Remove the `-e` flag to install the package in normal mode.
