@@ -51,6 +51,11 @@ footer {
     color: var(--accent1-color);
     background-color: var(--secondary-color);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 a {
@@ -70,7 +75,7 @@ nav ul {
     gap: 1rem;
 }
 
-/* classes */
+/* Classes */
 
 .logo-header {
     display: flex;
@@ -127,6 +132,23 @@ nav .active::after {
     visibility: hidden;
 }
 
+.project-info, .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         display: grid;
@@ -174,6 +196,8 @@ nav .active::after {
         gap: 1rem;
     }
 
+    /* Classes */
+
     nav .active {
         position: relative;
     }
@@ -190,8 +214,21 @@ nav .active::after {
         transform: translateX(-50%);
     }
 
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        text-align: left;
+    }
+
     .toogle-menu {
         display: none;
         visibility: hidden;
+    }
+
+    .social-icons svg {
+        width: 48px;
+        height: 48px;
     }
 }
