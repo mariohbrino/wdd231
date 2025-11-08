@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #bbfb09;
+    --primary-color: #7dd956;
     --secondary-color: #2c2c2c;
+    --tertiary-color: #bbfb09;
     --accent1-color: #ffffff;
     --accent2-color: #c3c3c3;
     --accent3-color: #000000;
@@ -59,8 +60,9 @@ footer {
 }
 
 a {
+    font-weight: 600;
     text-decoration: none;
-    color: var(--accent1-color);
+    color: var(--tertiary-color);
 }
 
 a:hover {
@@ -106,8 +108,18 @@ nav .active::after {
     left: -12px;
     width: 4px;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+/* When hovering the active link, change both text and indicator */
+nav .active:hover {
+    color: var(--primary-color);
+}
+
+nav .active:hover::after {
+    background-color: var(--primary-color);
 }
 
 .toogle-menu {
@@ -209,9 +221,18 @@ nav .active::after {
         left: 50%;
         width: 50%;
         height: 4px;
-        background-color: var(--primary-color);
+        background-color: var(--tertiary-color);
         border-radius: 2px;
         transform: translateX(-50%);
+        transition: background-color 0.3s ease;
+    }
+
+    nav .active:hover {
+        color: var(--primary-color);
+    }
+
+    nav .active:hover::after {
+        background-color: var(--primary-color);
     }
 
     footer {

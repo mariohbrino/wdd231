@@ -25,3 +25,7 @@ button:hover {
     background-color: var(--accent1-color);
     border: 2px solid var(--accent1-color);
 }
+
+address {
+    font-style: normal;
+}
