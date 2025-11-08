@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Web Frontend Development I",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --base=/wdd231/",
     "build": "vite build"
   },
   "keywords": [],

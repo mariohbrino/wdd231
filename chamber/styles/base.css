@@ -7,3 +7,21 @@
 ul {
     list-style: none;
 }
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+    border: 2px solid var(--accent1-color);
+}
