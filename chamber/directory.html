@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 <body>
@@ -64,6 +65,15 @@
     </header>
     <main>
         <h1>Directory</h1>
+        <ul class="members-controls">
+            <li>
+                <button id="membersGrid" class="active">Grid</button>
+            </li>
+            <li>
+                <button id="membersList">List</button>
+            </li>
+        </ul>
+        <section id="members" class="members-list"></section>
     </main>
     <footer>
         <section class="contact-info">
