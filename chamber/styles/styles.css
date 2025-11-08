@@ -144,7 +144,7 @@ nav .active:hover::after {
     visibility: hidden;
 }
 
-.project-info, .contact-info {
+.project-info, .contact-info, .contact-info address {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
