@@ -1,7 +1,6 @@
 :root {
     --primary-color: #9ed956;
     --secondary-color: #2c2c2c;
-    --tertiary-color: #0ddd3a;
     --accent1-color: #ffffff;
     --accent2-color: #c3c3c3;
     --accent3-color: #000000;
@@ -62,7 +61,7 @@ footer {
 a {
     font-weight: 600;
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--accent1-color);
 }
 
 a:hover {
@@ -108,7 +107,7 @@ nav .active::after {
     left: -12px;
     width: 4px;
     height: 100%;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     border-radius: 2px;
     transition: background-color 0.3s ease;
 }
@@ -161,8 +160,8 @@ nav .active:hover::after {
 
 .members-controls .active {
     color: var(--accent3-color);
-    border: 1px solid var(--tertiary-color);
-    background-color: var(--tertiary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 .members-controls .active:hover {
@@ -269,7 +268,7 @@ nav .active:hover::after {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -435,7 +434,7 @@ nav .active:hover::after {
         left: 50%;
         width: 50%;
         height: 4px;
-        background-color: var(--tertiary-color);
+        background-color: var(--primary-color);
         border-radius: 2px;
         transform: translateX(-50%);
         transition: background-color 0.3s ease;
