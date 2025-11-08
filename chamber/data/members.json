@@ -5,56 +5,56 @@
       "address": "133 E 12300 S, Draper, UT 84020",
       "phone_number": "18014954840",
       "website_url": "http://www.goodwoodbbq.com/",
-      "image_url": "https://www.goodwoodbbq.com/templates/yootheme/cache/66/logo-1-66becd8a.webp"
+      "image_url": "/wdd231/chamber/images/logos/good-wood-bbq-logo.webp"
     },
     {
       "name": "Pork N Roll",
       "address": "541 E 12300 S, Draper, UT 84020",
       "phone_number": "13855492611",
       "website_url": "https://porknrollutah.com/",
-      "image_url": "https://porknrollutah.com/wp-content/uploads/2025/01/PAG-WEB-PNR-Home-steven-copy-02.svg"
+      "image_url": "/wdd231/chamber/images/logos/pork-n-roll-log.svg"
     },
     {
       "name": "OAK Wood Fire Kitchen",
       "address": "715 E 12300 S, Draper, UT 84020",
       "phone_number": "18019968155",
       "website_url": "https://www.oakwoodfirekitchen.com",
-      "image_url": "https://images.getbento.com/accounts/018c631d535e07d28d3ffed5666bd655/media/images/25967Oak_Bento_Main_Logo.png"
+      "image_url": "/wdd231/chamber/images/logos/oak-wood-fire-kitchen.png"
     },
     {
       "name": "R&R BBQ",
       "address": "10646 Jerry Seiner Road, South Jordan, UT 84095",
       "phone_number": "18015239500",
       "website_url": "https://locations.randrbbq.com/ut/south-jordan/south-jordan/",
-      "image_url": "https://llp-assets.meetsoci.com/live/assets/rrbarbequesites/images/randr-new-logo.png"
+      "image_url": "/wdd231/chamber/images/logos/r-and-r-bbq-logo.png"
     },
     {
       "name": "Libertango Steakhouse",
       "address": "10395 State St, Sandy, UT 84070",
       "phone_number": "18014486449",
       "website_url": "https://libertango.us/",
-      "image_url": "https://libertango.us/wp-content/uploads/2022/06/logo-steakhouse-no-shadows-1x80-1.png"
+      "image_url": "/wdd231/chamber/images/logos/libertango-steakhouse-logo.png"
     },
     {
       "name": "Makanmakan Asian Streat Food Fare",
       "address": "33 E 11400 S, Sandy, UT 84070",
       "phone_number": "18012510967",
       "website_url": "http://makanmakansandy.com/",
-      "image_url": "https://storage.googleapis.com/wzukusers/user-31119111/images/5a29e210285bdwXoPKN8/Makanmakan-Labels-_Page_1_d200.jpg"
+      "image_url": "/wdd231/chamber/images/logos/makanmakan-asian-streat-food-fare-logo.jpg"
     },
     {
       "name": "Bigeye Poke Grill",
       "address": "163 13800 S E6, Draper, UT 84020",
       "phone_number": "18015722299",
-      "website_url": "https://menufyproduction.imgix.net/638113871405340497+1050211.png?fit=crop&w=&h=300&auto=compress,format",
-      "image_url": "https://menufyproduction.imgix.net/638113871405340497+1050211.png?fit=crop&w=&h=300&auto=compress,format"
+      "website_url": "bigeyepokegrill.com",
+      "image_url": "/wdd231/chamber/images/logos/bigeye-poke-grill-logo.avif"
     },
     {
       "name": "Toscano - Draper",
       "address": "11450 State St, Draper, UT 84020",
       "phone_number": "18015725507",
-      "website_url": "https://www.toscano-restaurant.com/menu-index",
-      "image_url": "https://images.squarespace-cdn.com/content/v1/54e55398e4b04c452d682846/1604946287751-SX8S18YRZXHK0IGS88NW/TOSCANOTRANS.png?format=500w"
+      "website_url": "https://www.toscano-restaurant.com",
+      "image_url": "/wdd231/chamber/images/logos/toscano-draper-logo.webp"
     }
   ]
 }
