@@ -18,8 +18,22 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     background: #dbdbdb;
     color: #000000;
-    background-image: radial-gradient(circle, #495057 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 1rem 1rem;
+
+    --s: 40px;  /* control the size of the grid */
+    --n: 2;     /* control the granularity */
+    --t: 1px;   /* the thickness */
+    --g: 12px;  /* the gap between dashes */
+
+    --c:#e1e1e1 25%,#0000 0;
+
+    background: 
+        conic-gradient(at var(--g) var(--t),var(--c))
+        calc((var(--s)/var(--n) - var(--g) + var(--t))/2) 0/
+        calc(var(--s)/var(--n)) var(--s),
+        conic-gradient(from 180deg at var(--t) var(--g),var(--c))
+        0 calc((var(--s)/var(--n) - var(--g) + var(--t))/2)/
+        var(--s) calc(var(--s)/var(--n)),
+        #ffffff;
 }
 
 main, header, nav, footer {
