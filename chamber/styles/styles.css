@@ -303,6 +303,7 @@ nav .active:hover::after {
 }
 
 .hero {
+    position: relative;
     height: 45vh;
     display: flex;
     flex-direction: column;
@@ -318,6 +319,19 @@ nav .active:hover::after {
     object-fit: cover;
     object-position: center;
     filter: brightness(0.55);
+}
+
+.join-members {
+    position: absolute;
+    color: var(--accent3-color);
+    border: 1px solid var(--accent2-color);
+    background-color: var(--accent1-color);
+}
+
+.join-members:hover {
+    color: var(--accent1-color);
+    border: 1px solid var(--accent3-color);
+    background-color: var(--accent3-color);
 }
 
 .cards-info {
