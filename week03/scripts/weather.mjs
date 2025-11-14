@@ -14,7 +14,7 @@ const displayResults = (data) => {
 }
 
 const fetchWeather = async () => {
-  const apiKey = "090f6dc570462c17930e2526ea255867";
+  const apiKey = "4f5023e260501232ba161fc512064350";
   const baseUrl = "https://api.openweathermap.org/data/2.5";
   const latitude = 40.52;
   const longitude = -111.86;

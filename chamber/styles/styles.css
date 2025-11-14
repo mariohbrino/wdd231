@@ -157,6 +157,10 @@ nav .active:hover::after {
     visibility: hidden;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .members-list {
     display: flex;
     flex-direction: column;
@@ -312,6 +316,62 @@ nav .active:hover::after {
     gap: 0.5rem;
 }
 
+.cards-info {
+    display: grid;
+    gap: 1rem;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    background-color: var(--accent1-color);
+    border-radius: 0.5rem;
+}
+
+.weather-card-header {
+    padding: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.weather-card-content {
+    display: flex;
+    padding: 1rem 2rem;
+}
+
+.weather-card-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-card-body {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.weather-icon {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.title-case {
+    text-transform: capitalize;
+}
+
 .social-icons {
     display: flex;
     flex-direction: row;
@@ -384,6 +444,14 @@ nav .active:hover::after {
     .members-list .table tbody td {
         font-size: 1rem;
     }
+
+    main {
+        gap: 2rem;
+    }
+
+    .cards-info {
+        gap: 2rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -415,7 +483,7 @@ nav .active:hover::after {
         display: flex;
         flex-direction: column;
         align-content: start;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     main>*:not(h1) {
@@ -473,6 +541,19 @@ nav .active:hover::after {
     .toogle-menu {
         display: none;
         visibility: hidden;
+    }
+
+    .cards-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .weather-card {
+        height: 100%;
     }
 
     .social-icons svg {
