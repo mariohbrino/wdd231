@@ -28,11 +28,14 @@ body {
 main {
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
     background-color: var(--accent2-color);
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+main {
+    padding: 0 2rem 2rem 2rem;
 }
 
 header {
@@ -302,6 +305,24 @@ nav .active:hover::after {
     gap: 0.5rem;
 }
 
+.hero {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: calc(100% + 4rem);
+    height: 45vh;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.55);
+}
+
 .cards-info {
     display: grid;
     gap: 1rem;
@@ -465,7 +486,6 @@ nav .active:hover::after {
 
     main {
         width: 100%;
-        padding: 1rem;
         display: flex;
         flex-direction: column;
         align-content: start;
