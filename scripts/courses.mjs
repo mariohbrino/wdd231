@@ -78,6 +78,33 @@ const courses = [
   }
 ];
 
+const displayCard = (course) => {
+  return `
+    <div class="course-header">
+      <h3 class="course-title">${course.subject} ${course.number}</h3>
+      <span class="course-credits">${course.credits} credits</span>
+    </div>
+    <h4 class="course-name">${course.title}</h4>
+    <p class="course-description">${course.description}</p>
+    <div class="course-details">
+      <div class="course-certificate">
+        <strong>Certificate:</strong> ${course.certificate}
+      </div>
+      <div class="course-technologies">
+        <strong>Technologies:</strong> 
+        <span class="tech-tags">
+          ${course.technology.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+        </span>
+      </div>
+    </div>
+    <div class="course-status">
+      <span class="status-badge ${course.completed ? 'completed' : 'in-progress'}">
+        ${course.completed ? '✓ Completed' : '⏳ In Progress'}
+      </span>
+    </div>
+  `;
+}
+
 const populateAllCourses = (filter=null, completed=false) => {
   const listCoursesElement = document.querySelector("#listCourses");
 
@@ -102,30 +129,11 @@ const populateAllCourses = (filter=null, completed=false) => {
       articleElement.classList.add("completed-course");
     }
 
-    articleElement.innerHTML = `
-      <div class="course-header">
-        <h3 class="course-title">${course.subject} ${course.number}</h3>
-        <span class="course-credits">${course.credits} credits</span>
-      </div>
-      <h4 class="course-name">${course.title}</h4>
-      <p class="course-description">${course.description}</p>
-      <div class="course-details">
-        <div class="course-certificate">
-          <strong>Certificate:</strong> ${course.certificate}
-        </div>
-        <div class="course-technologies">
-          <strong>Technologies:</strong> 
-          <span class="tech-tags">
-            ${course.technology.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-          </span>
-        </div>
-      </div>
-      <div class="course-status">
-        <span class="status-badge ${course.completed ? 'completed' : 'in-progress'}">
-          ${course.completed ? '✓ Completed' : '⏳ In Progress'}
-        </span>
-      </div>
-    `;
+    articleElement.innerHTML = displayCard(course);
+
+    articleElement.addEventListener('click', () => {
+      displayCourseDetails(course);
+    });
     
     listCoursesElement.appendChild(articleElement);
     creditsTotal += course.credits;
@@ -165,12 +173,12 @@ const filterCoursesListen = () => {
 
   cseElement.addEventListener("click", () => {
     setActiveButton(cseElement);
-    populateAllCourses(filter="CSE");
+    populateAllCourses("CSE");
   });
 
   wddElement.addEventListener("click", () => {
     setActiveButton(wddElement);
-    populateAllCourses(filter="WDD");
+    populateAllCourses("WDD");
   });
 
   setActiveButton(allElement);
@@ -188,6 +196,24 @@ const toggleIcon = () => {
   closeIcon.classList.toggle("close-icon", !menu.classList.contains("open"));
   closeIcon.classList.toggle("open-icon", menu.classList.contains("open"));
 };
+
+const displayCourseDetails = (course) => {
+  const courseDetails = document.querySelector("#course-details");
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <div class="modal-body">
+    ${displayCard(course)}
+    </div>
+    <div class="modal-footer">
+      <button id="closeModal">Close</button>
+    </div>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
 
 const setupMenuClickHandler = () => {
   const toogleMenu = document.querySelector("#toogleMenu");
