@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script type="module" src="scripts/menu.mjs"></script>
+    <script type="module" src="scripts/join.mjs"></script>
     <script type="module" src="scripts/dates.mjs"></script>
 </head>
 <body>
@@ -65,30 +66,9 @@
     <main>
         <h1>Join</h1>
         <div class="membership">
-            <section class="membership-information">
-                <h2>Membership Information</h2>
-                <ul>
-                    <li>
-                        <span>Non profit membership level</span>
-                        <button id="nonProfit" class="read-more">Read More</button>
-                    </li>
-                    <li>
-                        <span>Bronze membership level</span>
-                        <button id="bronze" class="read-more">Read More</button>
-                    </li>
-                    <li>
-                        <span>Silve membership level</span>
-                        <button id="silve" class="read-more">Read More</button>
-                    </li>
-                    <li>
-                        <span>Gold membership level</span>
-                        <button id="gold" class="read-more">Read More</button>
-                    </li>
-                </ul>
-            </section>
             <section class="membership-request">
                 <h2>Join Draper Chamber of Commerce</h2>
-                <form method="GET" action="thankyou.html" class="join-form">
+                <form method="GET" action="thankyou.html" class="join-form" id="joinForm">
                     <h3>Personal Information</h3>
                     <label for="first">First Name</label>
                     <input type="text" name="first" id="first" required autocomplete="given-name" title="Your First Name">
@@ -97,12 +77,12 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required placeholder="john.doe@example.com"  title="Your Email" autocomplete="email">
                     <label for="phone">Cell Phone</label>
-                    <input type="tel" name="phone" id="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="999-999-9999" >
+                    <input type="tel" name="phone" id="phone" required autocomplete="tel" title="A Phone Number with dashes" pattern="\+[0-9]{1} [0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+1 999-999-9999" >
     
                     <h3>Membership</h3>
                     <label for="membership">Membership Level</label>
-                    <select name="membership" id="membership" required>
-                        <option value="non-profit" selected>Non profit</option>
+                    <select name="membership-level" id="membership" required>
+                        <option value="nonProfit" selected>Non profit</option>
                         <option value="bronze">Bronze</option>
                         <option value="silve">Silve</option>
                         <option value="gold">Gold</option>
@@ -110,7 +90,7 @@
     
                     <h3>Organization Information</h3>
                     <label for="organizationName">Organization Name</label>
-                    <input type="text" name="organization-name" id="organizationName" required autocomplete="organization-name" title="Your Organization Name">
+                    <input type="text" name="organization-name" id="organizationName" required autocomplete="organization" title="Your Organization Name">
                     <label for="organizationTitle">Organization Title</label>
                     <input type="text" name="organization-title" id="organizationTitle" autocomplete="organization-title" title="Your Organization Title">
                     <label for="organizationDescription">Organization Description</label>
@@ -121,7 +101,9 @@
                     <button type="submit">Join Members</button>
                 </form>
             </section>
+            <section id="membershipInformation" class="membership-information"></section>
         </div>
+        <dialog id="membership-details"></dialog>
     </main>
     <footer>
         <section class="contact-info">

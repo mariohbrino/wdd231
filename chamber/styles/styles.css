@@ -106,7 +106,7 @@ form {
         color: var(--secondary-color);
     }
 
-    input:required, select:required, textarea:required {
+    input:required:user-invalid, select:required:user-invalid, textarea:required:user-invalid {
         border-color: var(--danger-color);
     }
 
@@ -471,6 +471,12 @@ nav .active:hover::after {
     gap: 0.5rem;
 }
 
+.membership-information button:hover {
+    color: var(--accent1-color);
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
 .membership-information ul li {
     display: flex;
     flex-direction: column;
@@ -478,6 +484,129 @@ nav .active:hover::after {
     align-items: center;
     text-align: center;
     gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--accent1-color);
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+}
+
+dialog button:hover {
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+    border: 2px solid var(--accent2-color);
+}
+
+.modal-footer {
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: var(--accent2-color) 1px solid;
+    gap: 1rem;
+}
+
+.membership-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membership-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membership-fees {
+    display: flex;
+}
+
+.membership-benefits {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.membership-benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.membership-information ul li {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.membership-information ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-information ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-information ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-information ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.membership-response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.membership-requestd {
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent1-color);
+    gap: 0.3rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -673,7 +802,7 @@ nav .active:hover::after {
 
     .membership {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: center;
         align-items: start;
         gap: 3rem;

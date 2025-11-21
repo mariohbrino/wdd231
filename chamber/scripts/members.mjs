@@ -157,7 +157,7 @@ const switchListMode = () => {
 
   membersList.addEventListener("click", () => {
     setActiveButton(membersList);
-    getMembersData(viewGrid = false);
+    getMembersData(false);
   });
 
   setActiveButton(membersGrid);

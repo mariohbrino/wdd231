@@ -1,0 +1,55 @@
+const memberships = [
+  {
+    id: "nonProfit",
+    name: "Non-Profit Membership",
+    fee: 0.00,
+    benefits: [
+      "Basic directory listing",
+      "Access to member resources"
+    ]
+  },
+  {
+    id: "bronze",
+    name: "Bronze Membership",
+    fee: 100.00,
+    benefits: [
+      "Enhanced directory listing",
+      "Access to member resources",
+      "Monthly newsletter",
+      "Networking events access"
+    ]
+  },
+  {
+    id: "silver",
+    name: "Silver Membership",
+    fee: 250.00,
+    benefits: [
+      "Premium directory listing",
+      "Access to member resources",
+      "Monthly newsletter",
+      "Networking events access",
+      "Training workshops",
+      "Event discounts (10%)",
+      "Social media promotion"
+    ]
+  },
+  {
+    id: "gold",
+    name: "Gold Membership",
+    fee: 500.00,
+    benefits: [
+      "Featured directory listing",
+      "Access to member resources",
+      "Monthly newsletter",
+      "Priority networking events access",
+      "Exclusive training workshops",
+      "Event discounts (20%)",
+      "Social media promotion",
+      "Homepage spotlight position",
+      "Advertising opportunities",
+      "VIP event invitations"
+    ]
+  }
+];
+
+export { memberships };
