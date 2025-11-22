@@ -1,6 +1,6 @@
 const memberships = [
   {
-    id: "nonProfit",
+    id: "np",
     name: "Non-Profit Membership",
     fee: 0.00,
     benefits: [

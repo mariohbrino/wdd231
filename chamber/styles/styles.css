@@ -77,47 +77,51 @@ nav ul {
     gap: 1rem;
 }
 
-form {
-    label {
-        display: block;
-        font-size: .9rem;
-        color: var(--secondary-color);
-    }
+form label {
+    display: block;
+    font-size: .9rem;
+    color: var(--secondary-color);
+}
 
-    h3 {
-        font-size: 1rem;
-        color: var(--secondary-color);
-        margin: 1rem 0 .2rem 0;
-    }
+form h3 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin: 1rem 0 .2rem 0;
+}
 
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select,
-    textarea {
-        display: block;
-        width: 100%;
-        margin: 0.1rem 0 1rem 0;
-        padding: 0.5rem;
-        border: 2px solid var(--secondary-color);
-        border-radius: 4px;
-        font-size: 1rem;
-        color: var(--secondary-color);
-    }
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.5rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
 
-    input:required:user-invalid, select:required:user-invalid, textarea:required:user-invalid {
-        border-color: var(--danger-color);
-    }
+form input:required:user-invalid,
+form select:required:user-invalid,
+form textarea:required:user-invalid {
+    border-color: var(--danger-color);
+}
 
-    input:focus, select:focus, textarea:focus {
-        border-color: var(--accent3-color);
-        outline: none;
-    }
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--accent3-color);
+    outline: none;
+}
 
-    input:required:valid, select:required:valid, textarea:required:valid {
-        border-color: var(--primary-color);
-    }
+form input:required:valid,
+form select:required:valid,
+form textarea:required:valid {
+    border-color: var(--primary-color);
 }
 
 input:-webkit-autofill {

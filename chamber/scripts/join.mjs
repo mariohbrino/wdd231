@@ -34,10 +34,7 @@ const displayMembership = (membership) => {
 
 const displayMembershipInfo = (data) => {
   const membershipInformation = document.querySelector("#membershipInformation");
-  const membershipHeader = document.createElement("h2");
   const listMembers = document.createElement("ul");
-  
-  membershipHeader.innerHTML = "Membership Information";
 
   data.forEach((member) => {
     const itemMember = document.createElement("li");
@@ -55,7 +52,6 @@ const displayMembershipInfo = (data) => {
     listMembers.appendChild(itemMember);
   });
 
-  membershipInformation.appendChild(membershipHeader);
   membershipInformation.appendChild(listMembers);
 };
 
