@@ -84,7 +84,7 @@
                     <select name="membership-level" id="membership" required>
                         <option value="np" selected>Non profit</option>
                         <option value="bronze">Bronze</option>
-                        <option value="silve">Silve</option>
+                        <option value="silver">Silver</option>
                         <option value="gold">Gold</option>
                     </select>
     
@@ -92,7 +92,7 @@
                     <label for="organizationName">Organization Name</label>
                     <input type="text" name="organization-name" id="organizationName" required autocomplete="organization" title="Your Organization Name">
                     <label for="organizationTitle">Organization Title</label>
-                    <input type="text" name="organization-title" id="organizationTitle" autocomplete="organization-title" title="Your Organization Title">
+                    <input type="text" name="organization-title" id="organizationTitle" autocomplete="organization-title" title="Your Organization Title" pattern="[A-Za-z\s\-]{7,}">
                     <label for="organizationDescription">Organization Description</label>
                     <textarea name="organization-description" id="organizationDescription"></textarea>
     

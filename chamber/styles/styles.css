@@ -491,6 +491,9 @@ nav .active:hover::after {
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--accent1-color);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 dialog {
@@ -571,12 +574,6 @@ dialog button:hover {
         opacity: 1;
         transform: translate(0);
     }
-}
-
-.membership-information ul li {
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-fill-mode: both;
 }
 
 .membership-information ul li:nth-child(1) {
