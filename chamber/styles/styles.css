@@ -760,6 +760,23 @@ dialog button:hover {
         grid-area: button;
         grid-column: span 2;
     }
+
+    .place-card figure:hover {
+        cursor: pointer;
+    }
+
+    .place-card:has(figure:hover) {
+        color: var(--accent1-color);
+        background-color: var(--secondary-color);
+        transition: background-color 0.6s ease, color 0.6s ease;
+    }
+
+    .place-card:has(figure:hover) button {
+        color: var(--accent1-color);
+        background-color: transparent;
+        border: 2px solid var(--accent1-color);
+        transition: background-color 0.6s ease, color 0.6s ease;
+    };
 }
 
 @media screen and (min-width: 1024px) {
