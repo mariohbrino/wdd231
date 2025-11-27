@@ -121,7 +121,7 @@ const displayWeaterForecast = (data) => {
 };
 
 const requestWeather = async (endpoint, callback=null) => {
-  const apiKey = "4f5023e260501232ba161fc512064350";
+  const apiKey = "643486124bff1e3d12256f8ab964512d";
   const baseUrl = "https://api.openweathermap.org/data/2.5";
   const latitude = 40.52;
   const longitude = -111.86;
@@ -158,9 +158,9 @@ const fetchForecast = async () => {
   await requestWeather("forecast", displayWeaterForecast);
 };
 
-const main = () => {
+const renderWeather = () => {
   fetchWeather();
   fetchForecast();
 };
 
-main();
+export { renderWeather };

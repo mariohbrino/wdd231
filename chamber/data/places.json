@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Loveland Living Planet Aquarium",
+    "category": "Attraction",
+    "description": "Interactive aquarium featuring marine life from around the world",
+    "address": "12033 S Lone Peak Pkwy, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/loveland-living-planet-aquarium.webp"
+  },
+  {
+    "name": "Corner Canyon Trail System",
+    "category": "Recreation",
+    "description": "Popular hiking and mountain biking trail network",
+    "address": "Corner Canyon Trailhead, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/corner-canyon-trail-system.webp"
+  },
+  {
+    "name": "Draper Historic Park",
+    "category": "Park",
+    "description": "Historic site with preserved buildings and picnic areas",
+    "address": "12500 S 1300 E, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/draper-historic-park.webp"
+  },
+  {
+    "name": "Draper Farmers Market",
+    "category": "Shopping",
+    "description": "Seasonal market featuring local produce and crafts",
+    "address": "Smith Fields Park, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/draper-farmers-market.webp"
+  },
+  {
+    "name": "Cowabunga Bay Water Park",
+    "category": "Attraction",
+    "description": "Family water park with slides and wave pool",
+    "address": "12475 S 900 E, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/cowabunga-bay-water-park.webp"
+  },
+  {
+    "name": "South Mountain Golf Club",
+    "category": "Recreation",
+    "description": "Public golf course with scenic mountain views",
+    "address": "1247 E Rambling Rd, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/south-mountain-golf-club.webp"
+  },
+  {
+    "name": "Draper City Park",
+    "category": "Park",
+    "description": "Community park with sports fields and playgrounds",
+    "address": "12500 S 900 E, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/draper-city-park.webp"
+  },
+  {
+    "name": "Draper Amphitheater",
+    "category": "Event Venue",
+    "description": "Outdoor venue for concerts and community events",
+    "address": "944 Vestry Rd, Draper, UT 84020",
+    "image_url": "/wdd231/chamber/images/places/draper-amphitheater.webp"
+  }
+]

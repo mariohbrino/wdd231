@@ -163,5 +163,4 @@ const switchListMode = () => {
   setActiveButton(membersGrid);
 };
 
-getMembersData();
-switchListMode();
+export { getMembersData, switchListMode };

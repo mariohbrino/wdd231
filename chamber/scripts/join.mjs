@@ -1,4 +1,6 @@
-import { memberships } from "./membership_data.mjs";
+import { setupMenuClickHandler } from "./menu.mjs";
+import { renderFooter }  from "./dates.mjs";
+import memberships from "../data/membership.json" with { type: "json" };
 
 const displayMembershipDetails = (membership) => {
   return `
@@ -63,8 +65,10 @@ const setTimestampOnForm = () => {
 };
 
 const main = () => {
+  setupMenuClickHandler();
   setTimestampOnForm();
   displayMembershipInfo(memberships);
+  renderFooter();
 };
 
 main();

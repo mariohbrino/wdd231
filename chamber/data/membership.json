@@ -1,18 +1,18 @@
-const memberships = [
+[
   {
-    id: "np",
-    name: "Non-Profit Membership",
-    fee: 0.00,
-    benefits: [
+    "id": "np",
+    "name": "Non-Profit Membership",
+    "fee": 0.00,
+    "benefits": [
       "Basic directory listing",
       "Access to member resources"
     ]
   },
   {
-    id: "bronze",
-    name: "Bronze Membership",
-    fee: 100.00,
-    benefits: [
+    "id": "bronze",
+    "name": "Bronze Membership",
+    "fee": 100.00,
+    "benefits": [
       "Enhanced directory listing",
       "Access to member resources",
       "Monthly newsletter",
@@ -20,10 +20,10 @@ const memberships = [
     ]
   },
   {
-    id: "silver",
-    name: "Silver Membership",
-    fee: 250.00,
-    benefits: [
+    "id": "silver",
+    "name": "Silver Membership",
+    "fee": 250.00,
+    "benefits": [
       "Premium directory listing",
       "Access to member resources",
       "Monthly newsletter",
@@ -34,10 +34,10 @@ const memberships = [
     ]
   },
   {
-    id: "gold",
-    name: "Gold Membership",
-    fee: 500.00,
-    benefits: [
+    "id": "gold",
+    "name": "Gold Membership",
+    "fee": 500.00,
+    "benefits": [
       "Featured directory listing",
       "Access to member resources",
       "Monthly newsletter",
@@ -50,6 +50,4 @@ const memberships = [
       "VIP event invitations"
     ]
   }
-];
-
-export { memberships };
+]

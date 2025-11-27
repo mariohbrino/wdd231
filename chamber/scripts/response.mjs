@@ -1,4 +1,6 @@
-import { memberships } from "./membership_data.mjs";
+import { setupMenuClickHandler } from "./menu.mjs";
+import { renderFooter }  from "./dates.mjs";
+import memberships from "../data/membership.json" with { type: "json" };
 
 const findMembership = (membershipLevel) => {
   const pickedMembership = memberships.filter(
@@ -37,4 +39,10 @@ const displayResponse = () => {
   displayRequest(data);
 }
 
-displayResponse();
+const main = () => {
+  setupMenuClickHandler();
+  displayResponse();
+  renderFooter();
+};
+
+main();

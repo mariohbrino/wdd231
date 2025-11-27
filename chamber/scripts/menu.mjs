@@ -24,4 +24,4 @@ const setupMenuClickHandler = () => {
   });
 };
 
-setupMenuClickHandler();
+export { setupMenuClickHandler };

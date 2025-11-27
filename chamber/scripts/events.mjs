@@ -1,4 +1,4 @@
-const displayEvents = () => {
+const renderEvents = () => {
   const cardsInfo = document.querySelector("#cardsInfo");
 
   const card = document.createElement("div");
@@ -21,4 +21,4 @@ const displayEvents = () => {
   cardsInfo.appendChild(card);
 };
 
-displayEvents();
+export { renderEvents };

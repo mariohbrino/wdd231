@@ -76,10 +76,10 @@ const displayRandomMembers = (members) => {
   membersElement.appendChild(gridList);
 };
 
-const main = async () => {
+const renderRandomMembers = async () => {
   const url = '/wdd231/chamber/data/members.json';
   const data = await getMembersData(url);
   displayRandomMembers(data);
 };
 
-await main();
+export { renderRandomMembers };

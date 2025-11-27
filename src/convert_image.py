@@ -1,5 +1,6 @@
-from PIL import Image
 import os
+
+from PIL import Image
 
 
 def convert_image(
@@ -7,7 +8,7 @@ def convert_image(
     output_path: str,
     target_height: int = 512,  # Set your desired height
     quality: int = 85,
-    background_color: tuple = (255, 255, 255)  # Solid background color (white)
+    background_color: tuple = (255, 255, 255),  # Solid background color (white)
 ) -> None:
     """
     Resize an image so the height matches target_height, keeping aspect ratio.
@@ -42,7 +43,7 @@ def convert_image(
 
 if __name__ == "__main__":
     images = os.path.join(os.path.dirname(__file__), "images-base")
-    output_dir = os.path.join(os.path.dirname(__file__), "chamber/images")
+    output_dir = os.path.join(os.path.dirname(__file__), "images-results")
     os.makedirs(output_dir, exist_ok=True)
 
     for image in os.listdir(images):
@@ -54,7 +55,7 @@ if __name__ == "__main__":
         convert_image(
             input_path=os.path.join(images, image),
             output_path=os.path.join(output_dir, output_filename),
-            target_height=720,  # Set the desired height
-            quality=75,
+            target_height=200,  # Set the desired height
+            quality=99,
             background_color=(255, 255, 255),  # White background
         )
