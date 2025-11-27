@@ -652,3 +652,29 @@ dialog button:hover {
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
 }
+
+.message-response {
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.display-welcome {
+    color: #FF9DD4;
+    background-color: #520030;
+}
+
+.display-day {
+    color: #1BC2AC;
+    background-color: #062622;
+}
+
+.display-days {
+    color: #C0D10A;
+    background-color: #353913;
+}
