@@ -627,9 +627,9 @@ dialog button:hover {
 
     grid-template-areas:
         "image"
-        "title"
         "description"
-        "address";
+        "address"
+        "button";
 }
 
 .place-card figure {
@@ -644,7 +644,7 @@ dialog button:hover {
     grid-area: description;
 }
 
-.place-card p.address {
+.place-card address.address {
     grid-area: address;
 }
 
@@ -654,7 +654,8 @@ dialog button:hover {
     object-fit: cover;
     object-position: center;
     display: block;
-    margin: -1rem -1rem 0 -1rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
 }
 
 .place-card button:hover {
@@ -734,6 +735,30 @@ dialog button:hover {
     .places-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .place-card {
+        display: grid;
+        grid-template-areas:
+            "image title"
+            "image description"
+            "image address"
+            "button button";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .place-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin: 0;
+    }
+
+    .place-card button {
+        grid-area: button;
+        grid-column: span 2;
     }
 }
 
@@ -880,5 +905,15 @@ dialog button:hover {
     .places-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .place-card {
+        display: grid;
+        grid-template-areas:
+            "image title"
+            "image description"
+            "image address"
+            "button button";
+        grid-template-columns: 1fr 1fr;
     }
 }
