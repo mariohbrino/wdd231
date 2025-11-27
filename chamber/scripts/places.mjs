@@ -10,6 +10,7 @@ const displayPlaces = (data) => {
     const address = document.createElement("address");
     const placeFigure = document.createElement("figure");
     const placeImage = document.createElement("img");
+    const readButton = document.createElement("button");
 
     card.classList.add("place-card");
     title.classList.add("place-title");
@@ -24,12 +25,15 @@ const displayPlaces = (data) => {
     placeImage.setAttribute("width", "300");
     placeImage.setAttribute("height", "200");
 
+    readButton.innerHTML = "Read More";
+
     placeFigure.appendChild(placeImage);
 
     card.appendChild(placeFigure);
     card.appendChild(title);
     card.appendChild(description);
     card.appendChild(address);
+    card.appendChild(readButton);
 
     placesList.appendChild(card);
   });

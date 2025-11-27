@@ -616,7 +616,7 @@ dialog button:hover {
     gap: 1rem;
 }
 
-.places-list .place-card {
+.place-card {
     display: grid;
     background-color: var(--accent1-color);
     border-radius: 1rem;
@@ -632,29 +632,35 @@ dialog button:hover {
         "address";
 }
 
-.places-list .place-card figure {
+.place-card figure {
     grid-area: image;
 }
 
-.places-list .place-card h3 {
+.place-card h3 {
     grid-area: title;
 }
 
-.places-list .place-card p.description {
+.place-card p.description {
     grid-area: description;
 }
 
-.places-list .place-card p.address {
+.place-card p.address {
     grid-area: address;
 }
 
-.places-list .place-card img {
+.place-card img {
     width: calc(100% + 2rem);
     height: 200px;
     object-fit: cover;
     object-position: center;
     display: block;
     margin: -1rem -1rem 0 -1rem;
+}
+
+.place-card button:hover {
+    color: var(--accent1-color);
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 @media screen and (min-width: 640px) {
