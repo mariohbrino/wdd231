@@ -610,14 +610,65 @@ dialog button:hover {
     gap: 0.3rem;
 }
 
-@media screen and (max-width: 767px) {
-    .members-list .table thead {
-        display: none;
+.places-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.places-list .place-card {
+    display: grid;
+    background-color: var(--accent1-color);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    gap: 0.5rem;
+    overflow: hidden;
+
+    grid-template-areas:
+        "image"
+        "title"
+        "description"
+        "address"
+}
+
+.places-list .place-card figure {
+    grid-area: image;
+}
+
+.places-list .place-card h3 {
+    grid-area: title;
+}
+
+.places-list .place-card p.description {
+    grid-area: description;
+}
+
+.places-list .place-card p.address {
+    grid-area: address;
+}
+
+.places-list .place-card img {
+    width: calc(100% + 2rem);
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: -1rem -1rem 0 -1rem;
+}
+
+@media screen and (min-width: 640px) {
+    main {
+        gap: 2rem;
     }
 
     .members-list .table {
         background-color: transparent;
         box-shadow: none;
+    }
+
+    .members-list .table thead {
+        display: none;
     }
 
     .members-list .table tbody tr {
@@ -651,9 +702,7 @@ dialog button:hover {
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
-}
 
-@media screen and (min-width: 768px) {
     .members-list .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -672,12 +721,13 @@ dialog button:hover {
         font-size: 1rem;
     }
 
-    main {
+    .cards-info {
         gap: 2rem;
     }
 
-    .cards-info {
-        gap: 2rem;
+    .places-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -819,5 +869,10 @@ dialog button:hover {
     .membership-information {
         position: sticky;
         top: 2rem;
+    }
+
+    .places-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

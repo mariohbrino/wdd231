@@ -5,24 +5,29 @@ const displayPlaces = (data) => {
   
   data.forEach((place) => {
     const card = document.createElement("section");
-    const name = document.createElement("h2");
+    const title = document.createElement("h2");
     const description = document.createElement("p");
     const address = document.createElement("address");
     const placeFigure = document.createElement("figure");
     const placeImage = document.createElement("img");
 
-    name.innerHTML = `${place.name}`;
+    card.classList.add("place-card");
+    title.classList.add("place-title");
+
+    title.innerHTML = `${place.name}`;
     description.innerHTML = `${place.description}`;
     address.innerHTML = `${place.address}`;
 
     placeImage.setAttribute("src", place.image_url);
     placeImage.setAttribute("alt", `Place - ${place.name}`);
     placeImage.setAttribute("loading", "lazy");
+    placeImage.setAttribute("width", "300");
+    placeImage.setAttribute("height", "200");
 
     placeFigure.appendChild(placeImage);
 
     card.appendChild(placeFigure);
-    card.appendChild(name);
+    card.appendChild(title);
     card.appendChild(description);
     card.appendChild(address);
 
