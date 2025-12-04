@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #00D4D4;
+    --secondary-color: #0A1D56;
+    --danger-color: #de1212;
+    --accent1-color: #f1f1f1;
+    --accent2-color: #f3f3f3;
+    --accent3-color: #3A3A43;
+    --accent4-color: #212121;
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --screen-medium: 768px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid var(--accent2-color);
+    background-color: var(--accent2-color);
+}
+
+address {
+    font-style: normal;
+}
