@@ -224,12 +224,12 @@ const updateDistance = (event) => {
   distanceGrid.innerHTML = "";
   if (lineInstance) {
     const data = lineInstance.getAll();
+    const cards = document.createElement("ul");
     if (data.features.length > 0) {
       data.features.forEach((line) => {
         const length = turf.length(line, { units: "feet" });
         const rounded_length = Math.round(length * 100) / 100;
 
-        const cards = document.createElement("ul");
         const card = document.createElement("li");
 
         const cardHeader = document.createElement("div");
