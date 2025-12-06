@@ -75,12 +75,19 @@
         </nav>
     </header>
     <main>
-        <h1>Distance</h1>
+        <h1>Calculate Distance</h1>
         <div id="map" class="map"></div>
         <div class="map-controls">
             <button id="recenterMap" class="map-action">Recenter</button>
-            <button id="dragMap" class="map-action" role="disable">Disable Drag</button>
+            <button id="dragMap" class="map-action" aria-pressed="false" aria-label="Toggle map drag functionality">Disable Drag</button>
         </div>
+        <div id="distanceList" class="distance-list">
+            <h2>Distance List</h2>
+            <div id="distanceGrid" class="distance-grid">
+                No distance found. Use drawing control and add your measurements.
+            </div>
+        </div>
+        <dialog id="modalDetails" class="modal-details"></dialog>
     </main>
     <footer>
         <section class="contact-info">

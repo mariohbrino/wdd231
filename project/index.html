@@ -75,9 +75,10 @@
         <div id="map" class="map"></div>
         <div class="map-controls">
             <button id="recenterMap" class="map-action">Recenter</button>
-            <button id="dragMap" class="map-action" role="disable">Disable Drag</button>
+            <button id="dragMap" class="map-action" aria-pressed="false" aria-label="Toggle map drag functionality">Disable Drag</button>
         </div>
         <div id="restaurantsList" class="restaurants-list"></div>
+        <dialog id="modalDetails" class="modal-details"></dialog>
     </main>
     <footer>
         <section class="contact-info">

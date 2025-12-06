@@ -9,6 +9,12 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+
+    .calculate-grid ul, .distance-grid ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -108,5 +114,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+    }
+
+    .calculate-grid ul, .distance-grid ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 }
