@@ -3,7 +3,7 @@ import { renderFooter } from "./dates.mjs";
 import { displayMap, toggleDrag, toggleDragButton } from "./maps.mjs";
 
 const setupMap = async () => {
-  await displayMap();
+  await displayMap(true);
   toggleDrag();
   toggleDragButton();
 };

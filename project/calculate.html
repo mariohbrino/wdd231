@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | MapReview</title>
-    <meta name="description" content="This is the Home Page of MapReview">
+    <title>Calculate | MapReview</title>
+    <meta name="description" content="This is the Calculate Page of MapReview">
     <meta name="author" content="Mario Brino">
     <meta name="keyword" content="wdd231, mapreview, html, css, javascript">
-    <meta property="og:description" content="This is the Home Page of MapReview">
+    <meta property="og:description" content="This is the Calculate Page of MapReview">
     <meta property="og:image" content="https://mariohbrino.github.io/wdd231/project/images/logo.svg">
-    <meta property="og:title" content="Home | MapReview">
+    <meta property="og:title" content="Calculate | MapReview">
     <meta property="og:url" content="https://mariohbrino.github.io/wdd231">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +20,13 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.5.1/mapbox-gl-draw.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js" defer></script>
-    <script type="module" src="scripts/index.mjs"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.5.1/mapbox-gl-draw.js" defer></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js" defer></script>
+    <script type="module" src="scripts/calculate.mjs"></script>
 </head>
 
 <body>
@@ -59,10 +63,10 @@
         <nav id="navigation" class="nav-hidden">
             <ul>
                 <li>
-                    <a href="/wdd231/project/index.html" class="active">Home</a>
+                    <a href="/wdd231/project/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="/wdd231/project/calculate.html">Calculate</a>
+                    <a href="/wdd231/project/calculate.html" class="active">Calculate</a>
                 </li>
                 <li>
                     <a href="/wdd231/project/distance.html">Distance</a>
@@ -71,7 +75,7 @@
         </nav>
     </header>
     <main>
-        <h1>Home</h1>
+        <h1>Calculate</h1>
         <div id="map" class="map"></div>
         <button id="dragMap" class="drag-map" role="disable">Disable Drag</button>
     </main>

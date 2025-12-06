@@ -42,3 +42,9 @@ button:hover {
 address {
     font-style: normal;
 }
+
+.privacy-notice {
+    font-size: 0.8rem;
+    color: var(--accent3-color);
+    margin-top: 0.5rem;
+}
