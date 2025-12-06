@@ -106,6 +106,22 @@ const displayMap = async (drawPolygon = false, drawLine = false) => {
   }
 };
 
+const recenterMap = () => {
+  const latitude = 40.52;
+  const longitude = -111.86;
+
+  const recenterMap = document.querySelector("#recenterMap");
+
+  recenterMap.addEventListener("click", (event) => {
+    state.map.flyTo({
+      center: [longitude, latitude],
+      zoom: 11,
+      speed: 0.8,
+      curve: 3
+    });
+  });
+};
+
 const toggleDragButton = () => {
   const dragMap = document.querySelector("#dragMap");
   
@@ -129,4 +145,23 @@ const toggleDrag = () => {
   }
 };
 
-export { displayMap, toggleDrag, toggleDragButton };
+const populateMarkers = (data) => {
+  data.forEach((item) => {
+    const marker = new mapboxgl.Marker()
+      .setLngLat([item.longitude, item.latitude])
+      .addTo(state.map);
+    
+    const popup = new mapboxgl.Popup({ offset: 25, closeButton: false })
+      .setHTML(`<h3>${item.name}</h3>`);
+    
+    marker.setPopup(popup);
+  });
+};
+
+export {
+  displayMap,
+  recenterMap,
+  toggleDrag,
+  toggleDragButton,
+  populateMarkers
+};

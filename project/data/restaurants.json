@@ -1,0 +1,139 @@
+{
+  "restaurants": [
+    {
+      "name": "Goodwood Barbecue Company",
+      "address": "133 E 12300 S, Draper, UT 84020",
+      "latitude": 40.5271,
+      "longitude": -111.8872,
+      "phone_number": "18014954840",
+      "website_url": "http://www.goodwoodbbq.com/",
+      "image_url": "/wdd231/project/images/logos/good-wood-bbq-logo.png"
+    },
+    {
+      "name": "Pork N Roll",
+      "address": "541 E 12300 S, Draper, UT 84020",
+      "latitude": 40.52691,
+      "longitude": -111.87613,
+      "phone_number": "13855492611",
+      "website_url": "https://porknrollutah.com/",
+      "image_url": "/wdd231/project/images/logos/pork-n-roll-logo.png"
+    },
+    {
+      "name": "R&R BBQ",
+      "address": "10646 Jerry Seiner Road, South Jordan, UT 84095",
+      "latitude": 40.5580,
+      "longitude": -111.9005,
+      "phone_number": "18015239500",
+      "website_url": "https://locations.randrbbq.com/ut/south-jordan/south-jordan/",
+      "image_url": "/wdd231/project/images/logos/r-and-r-bbq-logo.png"
+    },
+    {
+      "name": "Libertango Steakhouse",
+      "address": "10395 State St, Sandy, UT 84070",
+      "latitude": 40.5625,
+      "longitude": -111.8899,
+      "phone_number": "18014486449",
+      "website_url": "https://libertango.us/",
+      "image_url": "/wdd231/project/images/logos/libertango-steakhouse-logo.png"
+    },
+    {
+      "name": "OAK Wood Fire Kitchen",
+      "address": "715 E 12300 S, Draper, UT 84020",
+      "latitude": 40.5279,
+      "longitude": -111.8707,
+      "phone_number": "18019968155",
+      "website_url": "https://www.oakwoodfirekitchen.com",
+      "image_url": "/wdd231/project/images/logos/oak-wood-fire-kitchen.png"
+    },
+    {
+      "name": "Makanmakan Asian Streat Food Fare",
+      "address": "33 E 11400 S, Sandy, UT 84070",
+      "latitude": 40.5449,
+      "longitude": -111.8904,
+      "phone_number": "18012510967",
+      "website_url": "http://makanmakansandy.com/",
+      "image_url": "/wdd231/project/images/logos/makanmakan-asian-streat-food-fare-logo.png"
+    },
+    {
+      "name": "Bigeye Poke Grill",
+      "address": "163 13800 S E6, Draper, UT 84020",
+      "latitude": 40.5018,
+      "longitude": -111.8856,
+      "phone_number": "18015722299",
+      "website_url": "bigeyepokegrill.com",
+      "image_url": "/wdd231/project/images/logos/bigeye-poke-grill-logo.png"
+    },
+    {
+      "name": "Toscano - Draper",
+      "address": "11450 State St, Draper, UT 84020",
+      "latitude": 40.5434,
+      "longitude": -111.8915,
+      "phone_number": "18015725507",
+      "website_url": "https://www.toscano-restaurant.com",
+      "image_url": "/wdd231/project/images/logos/toscano-draper-logo.png"
+    },
+    {
+      "name": "The Cliff Dining Pub",
+      "address": "12234 Draper Gate Dr, Draper, UT 84020",
+      "latitude": 40.5279,
+      "longitude": -111.8529,
+      "phone_number": "18015232053",
+      "website_url": "http://cliffdiningpub.com/",
+      "image_url": "/wdd231/project/images/logos/cliff-dining-pub-logo.png"
+    },
+    {
+      "name": "Spitz - Draper",
+      "address": "62E E 12300 S, Draper, UT 84020",
+      "latitude": 40.5264,
+      "longitude": -111.8893,
+      "phone_number": "18014328204",
+      "website_url": "https://spitz-restaurant.com/mediterranean-food-draper-restaurant-bar/",
+      "image_url": "/wdd231/project/images/logos/spitz-draper-logo.png"
+    },
+    {
+      "name": "Garage Grill",
+      "address": "1122 East Draper Pkwy, Draper, UT 84020",
+      "latitude": 40.5273,
+      "longitude": -111.8588,
+      "phone_number": "18015233339",
+      "website_url": "http://www.thegaragegrill.com/",
+      "image_url": "/wdd231/project/images/logos/garage-grill-logo.png"
+    },
+    {
+      "name": "Les BBQ",
+      "address": "12059 S State St #80, Draper, UT 84020",
+      "latitude": 40.5321,
+      "longitude": -111.8895,
+      "phone_number": "18016131586",
+      "website_url": "https://lesbbq.com/",
+      "image_url": "/wdd231/project/images/logos/les-bbq-logo.png"
+    },
+    {
+      "name": "FreshFin | Draper",
+      "address": "185 E 12300 S Suite L1, Draper, UT 84020",
+      "latitude": 40.5273,
+      "longitude": -111.8854,
+      "phone_number": "13852551064",
+      "website_url": "http://www.freshfinpoke.com/",
+      "image_url": "/wdd231/project/images/logos/fresh-fin-logo.png"
+    },
+    {
+      "name": "The Pines",
+      "address": "1229 Pioneer Rd, Draper, UT 84020",
+      "latitude": 40.5256,
+      "longitude": -111.8553,
+      "phone_number": "18019991011",
+      "website_url": "http://www.thepinesdraper.com/",
+      "image_url": "/wdd231/project/images/logos/the-pines-logo.png"
+    },
+    {
+      "name": "Samurai Noodle",
+      "address": "11483 State St, Draper, UT 84020",
+      "latitude": 40.5430,
+      "longitude": -111.8906,
+      "phone_number": "18019873887",
+      "website_url": "https://www.samurainoodle.com/",
+      "image_url": "/wdd231/project/images/logos/samurai-noodle-logo.png"
+    }
+  ]
+}

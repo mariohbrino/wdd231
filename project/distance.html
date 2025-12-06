@@ -77,7 +77,10 @@
     <main>
         <h1>Calculate</h1>
         <div id="map" class="map"></div>
-        <button id="dragMap" class="drag-map" role="disable">Disable Drag</button>
+        <div class="map-controls">
+            <button id="recenterMap" class="map-action">Recenter</button>
+            <button id="dragMap" class="map-action" role="disable">Disable Drag</button>
+        </div>
     </main>
     <footer>
         <section class="contact-info">
@@ -120,7 +123,6 @@
             <h2>MapReview</h2>
             <p>&copy; <span id="currentYear"></span> - MapReview</p>
             <p>Last Modification: <span id="lastModified"></span></p>
-            <p class="privacy-notice">This site uses Mapbox services which may use cookies for functionality.</p>
         </section>
     </footer>
 </body>
