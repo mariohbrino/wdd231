@@ -19,19 +19,40 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4
       
     - name: Generate config.json with secrets
       run: |
-        cat > project/config.json << EOF
+        echo "Creating config.json..."
+        if [ -z "${{ secrets.MAPBOX_TOKEN }}" ]; then
+          echo "WARNING: MAPBOX_TOKEN secret is empty or not set!"
+          echo "Creating config.json with placeholder..."
+          cat > project/config.json << EOF
+        {
+          "mapbox_token": "SECRET_NOT_CONFIGURED"
+        }
+        EOF
+        else
+          echo "MAPBOX_TOKEN secret found, creating config.json..."
+          cat > project/config.json << EOF
         {
           "mapbox_token": "${{ secrets.MAPBOX_TOKEN }}"
         }
         EOF
+        fi
         
+    - name: Verify config.json was created
+      run: |
+        echo "Checking if config.json exists..."
+        ls -la project/
+        echo "Content of config.json:"
+        cat project/config.json
+        echo "Directory structure before upload:"
+        find . -name "*.json" -type f
+
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
