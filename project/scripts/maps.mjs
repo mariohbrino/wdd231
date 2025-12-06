@@ -2,12 +2,12 @@ import { mapboxToken } from "./config.mjs";
 
 const state = {};
 
-const displayMap = async (drawPolygon = false, drawLine = false) => {
+const displayMap = (drawPolygon = false, drawLine = false) => {
   const latitude = 40.52;
   const longitude = -111.86;
   
   if (typeof mapboxgl !== "undefined") {
-    mapboxgl.accessToken = await mapboxToken();
+    mapboxgl.accessToken = mapboxToken();
     
     const mapConfig = {
       container: "map",
