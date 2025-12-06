@@ -2,16 +2,16 @@ import { setupMenuClickHandler } from "./navigation.mjs";
 import { renderFooter } from "./dates.mjs";
 import { displayMap, toggleDrag, toggleDragButton } from "./maps.mjs";
 
-const setupMap = () => {
-  displayMap(false, true);
+const setupMap = async () => {
+  await displayMap(false, true);
   toggleDrag();
   toggleDragButton();
 };
 
-const main = () => {
+const main = async () => {
   setupMenuClickHandler();
-  setupMap();
+  await setupMap();
   renderFooter();
 };
 
-main();
+await main();
