@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js" defer></script>
-    <script type="module" src="scripts/index.mjs"></script>
+    <script type="module" src="scripts/search.mjs"></script>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
         <nav id="navigation" class="nav-hidden">
             <ul>
                 <li>
-                    <a href="/wdd231/project/index.html" class="active">Home</a>
+                    <a href="/wdd231/project/index.html">Home</a>
                 </li>
                 <li>
                     <a href="/wdd231/project/calculate.html">Calculate Area</a>
@@ -68,19 +68,21 @@
                     <a href="/wdd231/project/distance.html">Calculate Distance</a>
                 </li>
                 <li>
-                    <a href="/wdd231/project/search.html">Search</a>
+                    <a href="/wdd231/project/search.html" class="active">Search</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Home</h1>
-        <div id="map" class="map"></div>
-        <div class="map-controls">
-            <button id="recenterMap" class="map-action">Recenter</button>
-            <button id="dragMap" class="map-action" aria-pressed="false" aria-label="Toggle map drag functionality">Disable Drag</button>
+        <h1>Search City</h1>
+        <div class="search-card">
+            <form id="searchForm" class="search-form">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search for a location..." />
+                <input type="submit" value="Search" />
+            </form>
         </div>
-        <div id="restaurantsList" class="restaurants-list"></div>
+        <div id="map" class="map"></div>
         <dialog id="modalDetails" class="modal-details"></dialog>
     </main>
     <footer>

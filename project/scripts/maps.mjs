@@ -139,7 +139,7 @@ const displayModal = (data) => {
   closeModal.addEventListener("click", () => {
     modalDetails.close();
   });
-}
+};
 
 const populateMarkers = (data) => {
   data.forEach((item) => {
